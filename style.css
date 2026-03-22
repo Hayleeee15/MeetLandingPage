@@ -1,0 +1,60 @@
+:root {
+    /* Colors */
+    --primary-bg-color: #FAFAFA;         /* White */
+    --heading-color: #28283D;            /* Slate 900 */
+    --paragraph-color: #87879D;          /* Slate 600 */
+    --button-one-bg-color: #4D96A9;      /* Cyan 600 */
+    --button-par-color: #FAFAFA;         /* White */
+    --button-one-version-color: #8FE3F9; /* Cyan 300 */
+    --button-two-bg-color: #855FB1;      /* Purple 600 */
+    --button-two-version-color: #D9B8FF; /* Purple 300 */
+    --title-color: #4D96A9;              /* Cyan 600 */
+    --footer-color: #FAFAFA;             /* White */
+
+    /* Font Styles */
+    --ff: 'Red Hat Display', sans-serif;
+    --fs: 1rem;
+
+    --primary-heading-fw: 900;
+    --primary-heading-fs: 2.5rem;
+    --primary-heading-lh: 110%;
+
+    --paragraph-fw: 500;
+    --primary-heading-lh: 150%;
+
+    --button-fw: 900;
+    --button-lh: 150%;
+
+    --title-fw: 900;
+    --title-fs: .75rem;
+    --title-lh: 110%;
+    --title-ls: .25rem; /* Letter Spacing */
+
+    --heading-fw: 900;
+    --heading-fs: 2rem;
+    --heading-lh: 110%;
+}
+
+/* #region Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+/* #endregion Reset */

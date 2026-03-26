@@ -14,23 +14,20 @@
     /* Font Styles */
     --ff: 'Red Hat Display', sans-serif;
     --fs: 1rem;
+    --fw: 900;
 
-    --primary-heading-fw: 900;
-    --primary-heading-fs: 2.5rem;
-    --primary-heading-lh: 110%;
+    --hero-fs: 2.5rem;
+    --hero-lh: 110%;
 
     --paragraph-fw: 500;
     --primary-heading-lh: 150%;
 
-    --button-fw: 900;
     --button-lh: 150%;
 
-    --title-fw: 900;
     --title-fs: .75rem;
     --title-lh: 110%;
     --title-ls: .25rem; /* Letter Spacing */
 
-    --heading-fw: 900;
     --heading-fs: 2rem;
     --heading-lh: 110%;
 }
@@ -58,3 +55,45 @@ img, picture, video, canvas, svg {
     max-width: 100%;
 }
 /* #endregion Reset */
+
+/* general styles */
+body {
+    background-color:var(--primary-bg-color);
+    font-family: var(--ff);
+    font-size: var(--fs);
+
+    display: grid;
+    justify-content: center;
+    max-width: 100vh;
+    text-align: center;  
+}
+
+/* #region specific styles */
+main {
+    display: grid;
+    margin: 2rem;
+}
+
+h1 {
+    font-size: var(--hero-fs);
+    font-weight: var(--fw);
+    line-height: var(--hero-lh);
+    color: var(--heading-color);
+
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+p{
+    color: var(--paragraph-color);
+    font-size: var(--fs);
+    font-weight: var(--paragraph-fw);
+}
+
+.hero {
+    margin-top: 4rem;
+}
+
+
+/* #endregion */
+

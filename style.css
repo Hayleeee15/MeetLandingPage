@@ -74,6 +74,20 @@ main {
     margin: 2rem;
 }
 
+nav {
+    display: grid;
+    justify-content: center;
+}
+
+.mobile-faces{
+    max-width: 140%;
+    margin-left: -9vh;
+}
+
+.hero {
+    margin-top: 4rem;
+}
+
 h1 {
     font-size: var(--hero-fs);
     font-weight: var(--fw);
@@ -90,9 +104,41 @@ p{
     font-weight: var(--paragraph-fw);
 }
 
-.hero {
-    margin-top: 4rem;
+.hero-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1.5rem;
 }
+
+button {
+    border-radius: 2rem;
+    border: none;
+    padding: 1rem 2.5rem;
+
+    color: var(--button-par-color);
+    line-height: var(--button-lh);
+    font-size: var(--fs);
+    font-weight: var(--fw);
+}
+
+.button1 {    
+    background-color: var(--button-one-bg-color);
+}
+
+.d1-v1 {
+    color: var(--button-one-version-color);
+}
+
+.button2 {    
+    background-color: var(--button-two-bg-color);
+}
+
+.d2-v1 {
+    color: var(--button-two-version-color);
+}
+
 
 
 /* #endregion */

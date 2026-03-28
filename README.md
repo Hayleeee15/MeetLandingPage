@@ -45,11 +45,15 @@ Built to be responsive depending on device size.
 
 ## Update Progress
 
-### March 26th
+### March 27th, 2026
+
+Completed Mobile Design
+
+### March 26th, 2026
 
 Begun styling and adjusting padding/margin
 
-### March 22nd
+### March 22nd, 2026
 
 Initalized Repo
 

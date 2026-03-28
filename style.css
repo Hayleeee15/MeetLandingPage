@@ -10,6 +10,8 @@
     --button-two-version-color: #D9B8FF; /* Purple 300 */
     --title-color: #4D96A9;              /* Cyan 600 */
     --footer-color: #FAFAFA;             /* White */
+    --footer-rgb: 77, 150, 169;            /* Cyan 600 */
+    --footer-opacity: 0.9;
 
     /* Font Styles */
     --ff: 'Red Hat Display', sans-serif;
@@ -64,11 +66,11 @@ body {
 
     display: grid;
     justify-content: center;
-    max-width: 100vh;
+    max-width: 100vw;
     text-align: center;  
 }
 
-/* #region specific styles */
+/* #region hero */
 main {
     display: grid;
     margin: 2rem;
@@ -138,8 +140,71 @@ button {
 .d2-v1 {
     color: var(--button-two-version-color);
 }
+/* #endregion */
 
+/* #region main content */
+.main-content {
+    margin: 6rem 0;
+}
+.main-content-photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
 
+.main-content-photo {
+    border-radius: .5rem;
+}
+
+.title {
+    color: var(--title-color);
+    font-size: var(--title-fs);
+    font-weight: var(--fw);
+    line-height: var(--title-lh);
+    letter-spacing: var(--title-ls);
+    text-transform: uppercase;
+
+    margin-top: 4rem;
+}
+
+h2{
+    font-size: var(--heading-fs);
+    font-weight: var(--fw);
+    line-height: var(--heading-lh);
+}
+
+.main-content-head {
+    color: var(--heading-color);
+
+    margin: 1rem 0 2rem 0;
+}
+/* #endregion */
+
+/* #region footer */
+.footer-wrapper {
+    background: 
+        linear-gradient(
+            rgba(var(--footer-rgb), var(--footer-opacity)), 
+            rgba(var(--footer-rgb), var(--footer-opacity))
+        ),
+        url(./images/mobile/image-footer.jpg);
+    background-size: cover;
+    background-position: center;
+
+    margin: -2rem;
+}
+.footer-content {
+    margin: 4rem 0;
+}
+
+.footer-content h2, .footer-content p {
+    color: var(--footer-color);
+}
+
+.footer-content p {
+    margin: 1.5rem;
+}
 
 /* #endregion */
 

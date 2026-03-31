@@ -19,6 +19,7 @@
     --fw: 900;
 
     --hero-fs: 2.5rem;
+    --hero-fs-tablet: 3rem; 
     --hero-lh: 110%;
 
     --paragraph-fw: 500;
@@ -27,10 +28,12 @@
     --button-lh: 150%;
 
     --title-fs: .75rem;
+    --tittle-fs-tablet: .875rem;
     --title-lh: 110%;
     --title-ls: .25rem; /* Letter Spacing */
 
     --heading-fs: 2rem;
+    --heading-fs-tablet: 2.25rem;
     --heading-lh: 110%;
 }
 
@@ -46,6 +49,9 @@
 
 html, body {
     height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
 }
 
 input, button, textarea, select {
@@ -66,7 +72,6 @@ body {
 
     display: grid;
     justify-content: center;
-    max-width: 100vw;
     text-align: center;  
 }
 
@@ -146,6 +151,7 @@ button {
 .main-content {
     margin: 6rem 0;
 }
+
 .mc__photos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -203,8 +209,102 @@ h2{
 }
 
 .footer__content p {
+    font-weight: var(--paragraph-fw);
     margin: 1.5rem;
 }
 
 /* #endregion */
 
+/* #region Media Queries */
+
+@media (min-width: 48rem) {
+h1, h2, p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* #region hero */
+.hero, .main-content {
+    min-height: 47.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.hero__photo{
+    max-width: 150%;
+    margin-left: -4rem ;
+}
+
+h1 {
+    font-size: var(--hero-fs-tablet);
+    
+    max-width: 20rem;
+    margin-top: 4.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero p{
+    max-width: 25rem;
+}
+
+.hero__btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1.5rem;
+}
+/* #endregion */
+
+/* #region main content */
+.mc__photos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+
+.mc__title {
+    font-size: var(--tittle-fs-tablet);
+}
+
+h2{
+    font-size: var(--heading-fs-tablet);
+
+    max-width: 30rem;
+}
+
+.main-content p {
+    max-width: 32rem;
+}
+/* #endregion */
+
+/* #region footer */
+.footer--wrapper {
+    background: 
+        linear-gradient(
+            rgba(var(--footer-rgb), var(--footer-opacity)), 
+            rgba(var(--footer-rgb), var(--footer-opacity))
+        ),
+        url(./images/tablet/image-footer.jpg);
+    background-position: center;
+
+}
+
+.footer__content p{
+    max-width: 32rem;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+/* #endregion */
+
+}
+
+
+
+/* #endregion Media Queries */

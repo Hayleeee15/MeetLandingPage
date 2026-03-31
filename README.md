@@ -45,6 +45,16 @@ Built to be responsive depending on device size.
 
 ## Update Progress
 
+### March 31st, 2026
+
+Completed Tablet Design
+
+Used flex to center each article
+
+Updated photos to change depending on screen size
+
+Updated fonts to change size depending on screen size.
+
 ### March 27th, 2026
 
 Completed Mobile Design

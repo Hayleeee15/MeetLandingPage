@@ -45,6 +45,16 @@ Built to be responsive depending on device size.
 
 ## Update Progress
 
+### April 5th, 2026
+
+Completed Desktop Design
+
+Desktop layout includes the hero content sandwiched between two photos using flex
+
+The footer is now lined using flex so it appears in a row
+
+Updated fonts to adjust to desktop sized prefrences
+
 ### March 31st, 2026
 
 Completed Tablet Design

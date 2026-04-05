@@ -19,9 +19,11 @@
     --fw: 900;
 
     --hero-fs: 2.5rem;
-    --hero-fs-tablet: 3rem; 
+    --hero-fs-tablet: 3rem;
+    --hero-fs-desktop: 4rem;
     --hero-lh: 110%;
 
+    --paragraph-fs-desktop: 1.125rem;
     --paragraph-fw: 500;
     --primary-heading-lh: 150%;
 
@@ -220,6 +222,9 @@ h2{
 /* #endregion */
 
 /* #region Media Queries */
+.hero__right-photo {
+    display: none;
+}
 
 @media (min-width: 48rem) {
 h1, h2, p {
@@ -308,6 +313,73 @@ h2{
 /* #endregion */
 
 }
+
+@media (min-width: 64rem) {
+
+    nav {
+        width: 100%;
+        padding-top: 5rem;
+    }
+
+    main {
+        width: 100%;
+        margin: 0;
+    }
+/* #region hero */
+
+    .hero {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 15rem;
+        overflow: visible;
+    }
+
+    .hero__left-photo, .hero__right-photo {
+        display: flex;
+        flex-shrink: 0;
+    }
+
+    .hero__left-photo img, .hero__right-photo img {
+        width: 25rem;
+        height: auto;
+    }
+
+    .hero__left-photo {
+        margin-left: 0;
+    }
+
+    .hero__right-photo {
+        display: flex;
+        margin-right: -3rem;
+    }
+
+    .hero__text {
+        flex: 0 1 auto;
+        padding: 0 8rem;
+    }
+
+    .hero h1 {
+        font-size: var(--hero-fs-desktop);
+        max-width: 28rem;
+    }
+
+    .hero p{
+        font-size: var(--paragraph-fs-desktop);
+        max-width: 28rem;
+    }
+
+    .hero__btn{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        padding-top: 2rem;
+    }
+/* #endregion */
+
+/* #region main content */
 
 
 

@@ -36,6 +36,7 @@
 
     --heading-fs: 2rem;
     --heading-fs-tablet: 2.25rem;
+    --heading-fs-desktop: 2.5rem;
     --heading-lh: 110%;
 }
 
@@ -315,7 +316,6 @@ h2{
 }
 
 @media (min-width: 64rem) {
-
     nav {
         width: 100%;
         padding-top: 5rem;
@@ -380,7 +380,62 @@ h2{
 /* #endregion */
 
 /* #region main content */
+    .mc__photos {
+        padding: 0 10rem;;
+    }
 
+    .mc__title {
+        font-size: var(--fs);
+    }
+
+    .main-content h2{
+        max-width: 25rem;
+    }
+
+    .main-content p {
+        max-width: 30rem;
+    }
+
+/* #endregion */
+
+/* #region footer */
+    .footer--wrapper {
+        background: 
+            linear-gradient(
+                rgba(var(--footer-rgb), var(--footer-opacity)), 
+                rgba(var(--footer-rgb), var(--footer-opacity))
+            ), no-repeat
+            url(./images/desktop/image-footer.jpg);
+        background-position: center;
+    }
+
+    .footer__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 4rem 8rem;
+    }
+
+    .footer__content h2 {
+        font-size: var(--heading-fs-desktop);
+        max-width: 25rem;
+        margin: 2rem;
+        text-align: left;
+    }
+
+    .footer__content p {
+        font-size: var(--paragraph-fs-desktop);
+        max-width: 23rem;
+        margin: 2rem;
+        text-align: left;
+    }
+
+    .footer__content button {
+        margin: 2rem;
+    }
+/* #endregion */
+}
 
 
 /* #endregion Media Queries */

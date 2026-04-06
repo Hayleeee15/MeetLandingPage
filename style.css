@@ -78,7 +78,7 @@ body {
     text-align: center;  
 }
 
-/* Need to updated width of h1, h2, p*/
+/* Need to updated width of h1, h3, p*/
 /* Update photo width */
 /* Fix responsiveness between devices */
 
@@ -181,7 +181,7 @@ button {
     margin-top: 4rem;
 }
 
-h2{
+h3{
     font-size: var(--heading-fs);
     font-weight: var(--fw);
     line-height: var(--heading-lh);
@@ -204,23 +204,25 @@ h2{
         url(./images/mobile/image-footer.jpg);
     background-size: cover;
     background-position: center;
-
-    margin: -2rem;
 }
+
 footer {
-    margin: 4rem 0;
+    margin: 4rem 2rem;
 }
 
-footer h2, footer p {
+footer h3, footer p {
     color: var(--footer-color);
+    text-align: center;
 }
 
 footer p {
     font-weight: var(--paragraph-fw);
-    margin: 1.5rem;
+    margin: 1.5rem 0;
 }
 
 /* #endregion */
+
+/* #region Hide Elements */
 .hero__right-photo {
     display: none;
 }
@@ -228,12 +230,11 @@ footer p {
 .hero__left-photo {
     display: none;
 }
+/* #endregion */
 
 /* #region Media Queries */
-
-
 @media (min-width: 48rem) {
-h1, h2, p {
+h1, h3, p {
     margin-left: auto;
     margin-right: auto;
 }
@@ -287,7 +288,7 @@ h1 {
     font-size: var(--tittle-fs-tablet);
 }
 
-h2{
+h3{
     font-size: var(--heading-fs-tablet);
 
     max-width: 30rem;
@@ -321,6 +322,7 @@ footer p{
 }
 
 @media (min-width: 64rem) {
+/* #region generic */
     .hero__photo {
         display: none;
     }
@@ -334,8 +336,9 @@ footer p{
         width: 100%;
         margin: 0;
     }
-/* #region hero */
+/* #endregion */
 
+/* #region hero */
     .hero {
         flex-direction: row;
         justify-content: center;
@@ -397,7 +400,7 @@ footer p{
         font-size: var(--fs);
     }
 
-    .main-content h2{
+    .main-content h3{
         max-width: 25rem;
     }
 
@@ -426,7 +429,7 @@ footer p{
         padding: 4rem 8rem;
     }
 
-    footer h2 {
+    footer h3 {
         font-size: var(--heading-fs-desktop);
         max-width: 25rem;
         margin: 2rem;
@@ -445,6 +448,4 @@ footer p{
     }
 /* #endregion */
 }
-
-
 /* #endregion Media Queries */

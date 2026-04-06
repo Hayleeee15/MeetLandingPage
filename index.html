@@ -15,15 +15,16 @@
 
 <body>
   <main>
-      <nav>
+      <header>
         <img src="./images/logo.svg" alt="Meet logo">
-      </nav>
+      </header>
 
-      <article class="hero">
-        <picture  class="hero__left-photo"> 
+      <section class="hero">
+        <img src="./images/tablet/image-hero.png" alt="Happy faces" class="hero__photo">
+
+        <picture  class="hero__left-photo">
           <source srcset="./images/desktop/image-hero-left.png" media="(min-width:64rem)">
-          <source srcset="./images/tablet/image-hero.png" media="(min-width:48rem)">
-          <img src="./images/tablet/image-hero.png" alt="Happy faces of all nationalities" class="hero__photo">
+          <img src="./images/desktop/image-hero-left.png" alt="Happy faces of all nationalities">
         </picture>
 
         <div class="hero__text">
@@ -35,36 +36,34 @@
             <button type="button" class="btn--2">What is it?</button>
           </div>
         </div>
+
         <picture class="hero__right-photo">
-          <source srcset="./images/desktop/image-hero-right.png" alt="Happy faces of all nationalities" media="(min-width:64rem)">
-          <img src="" alt="">
+          <source srcset="./images/desktop/image-hero-right.png" media="(min-width:64rem)">
+          <img src="./images/desktop/image-hero-right.png" alt="Happy faces of all nationalities">
         </picture>
-      </article>
-                  
-      <picture>
-        <source srcset="./images/desktop/image-hero-right.png" media="(min-width:48rem)">
-      </picture>
+      </section>
 
-      <article class="main-content">
-        <picture class="mc__photos"> <!-- Photos need updated for each device-->
-          <img src="./images/desktop/image-woman-in-videocall.jpg" alt="Woman in videocall" class="mc-photo--style">
-          <img src="./images/desktop/image-women-videochatting.jpg" alt="Women videochatting" class="mc-photo--style">
-          <img src="./images/desktop/image-men-in-meeting.jpg" alt="Men in meeting" class="mc-photo--style">
-          <img src="./images/desktop/image-man-texting.jpg" alt="Man texting" class="mc-photo--style">
-        </picture>
 
-        <p class="mc__title">Built for modern use</p>
+      <section class="main-content">
+        <div class="mc__photos">
+          <img src="./images/desktop/image-woman-in-videocall.jpg" alt="" class="mc-photo--style">
+          <img src="./images/desktop/image-women-videochatting.jpg" alt="" class="mc-photo--style">
+          <img src="./images/desktop/image-men-in-meeting.jpg" alt="" class="mc-photo--style">
+          <img src="./images/desktop/image-man-texting.jpg" alt="" class="mc-photo--style">
+        </div>
+
+        <h3 class="mc__title">Built for modern use</h3>
         <h2 class="mc__head">Smarter meetings, all in one place</h2>
         <p>Send messages, share files, show your screen, and record your meetings — all in one 
         workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
-      </article>
+      </section>
 
       <div class="footer--wrapper">
-        <article class="footer__content">
+        <footer>
           <h2>Experience more together</h2>
           <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
           <button type="button" class="btn--2">Download <span class="btn--2version">v1.3</span></button> 
-        </article>
+        </footer>
       </div>
   </main>
 </body>

@@ -45,6 +45,14 @@ Built to be responsive depending on device size.
 
 ## Update Progress
 
+### April 6th, 2026
+
+Fixed semantic tags to include a header, main, and footer
+
+Changed the button tags to a tags
+
+Minor Margin/Padding adjustments
+
 ### April 5th, 2026
 
 Completed Desktop Design

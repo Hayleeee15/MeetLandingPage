@@ -92,9 +92,16 @@ main {
     margin: 2rem;
 }
 
+.hero {
+    overflow: hidden;
+}
+
 .hero__photo{
-    max-width: 140%;
-    margin-left: -9vh;
+    max-width: none;
+    width: clamp(110vw, 120vw, 130vw);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 h1 {
@@ -121,7 +128,7 @@ p{
     padding-top: 1.5rem;
 }
 
-a {
+.btn {
     border-radius: 2rem;
     border: none;
     padding: 1rem 2.5rem;
@@ -243,17 +250,16 @@ footer p {
 
 /* #region hero */
     .hero, .main-content {
-        min-height: 47.5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0;
+        margin: 4rem 0;
     }
 
     .hero__photo{
-        max-width: 150%;
-        margin-left: -4rem ;
+        width: 110vw;
+        margin-left: 10rem;
     }
 
     h1 {
@@ -360,7 +366,7 @@ footer p {
     }
 
     .hero__left-photo {
-        margin-left: 0;
+        margin-left: -3rem;
     }
 
     .hero__right-photo {
@@ -394,7 +400,8 @@ footer p {
 
 /* #region main content */
     .mc__photos {
-        padding: 0 10rem;;
+        padding: 0 10rem;
+        max-width: 90rem;
     }
 
     .mc__title {

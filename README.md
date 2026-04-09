@@ -27,23 +27,27 @@ Built to be responsive depending on device size.
     <b>Mobile Design:</b>
   </div>
   <div>
-  <p>WIP</p>
+  <p><img src="./images/screenshots/MeetLandingPage-Mobile.png" alt="Mobile Preview" width="250"></p>
   </div>
   <div>
     <b>Tablet Design:</b>
   </div>
   <div>
-    <p>WIP</p>
+    <p><img src="./images/screenshots/MeetLandingPage-Tablet.png" alt="Tablet Preview" width="500"></p>
   </div>
   <div>
     <b>Desktop Design:</b>
   </div>
   <div>
-    <p>WIP</p>
+    <p><img src="./images/screenshots/MeetLandingPag-Desktop.png" alt="Desktop Preview" width="500"></p>
   </div>
 </div>
 
 ## Update Progress
+
+### April 9th, 2026
+
+Updated README to include screenshots
 
 ### April 6th, 2026
 

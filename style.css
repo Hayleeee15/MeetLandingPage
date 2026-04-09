@@ -89,7 +89,6 @@ header {
 /* #region hero */
 main {
     display: grid;
-    margin: 2rem;
 }
 
 .hero {
@@ -98,10 +97,14 @@ main {
 
 .hero__photo{
     max-width: none;
-    width: clamp(110vw, 120vw, 130vw);
+    width: clamp(100vw, 105vw, 110vw);
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.hero__text {
+    padding: 0 2rem;
 }
 
 h1 {
@@ -110,8 +113,8 @@ h1 {
     line-height: var(--hero-lh);
     color: var(--heading-color);
 
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
 }
 
 p{
@@ -168,7 +171,7 @@ p{
 
 /* #region main content */
 .main-content {
-    margin: 6rem 0;
+    padding: 2rem;
 }
 
 .mc__photos {
@@ -190,7 +193,7 @@ p{
     letter-spacing: var(--title-ls);
     text-transform: uppercase;
 
-    margin-top: 4rem;
+    padding-top: 4rem;
 }
 
 h3{
@@ -202,7 +205,7 @@ h3{
 .mc__head {
     color: var(--heading-color);
 
-    margin: 1rem 0 2rem 0;
+    padding: 1rem 0 2rem 0;
 }
 /* #endregion */
 
@@ -226,7 +229,7 @@ footer h3, footer p {
 
 footer p {
     font-weight: var(--paragraph-fw);
-    margin: 1.5rem 0;
+    padding: 1.5rem 0;
 }
 
 /* #endregion */
@@ -254,20 +257,21 @@ footer p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 4rem 0;
     }
 
     .hero__photo{
-        width: 110vw;
-        margin-left: 10rem;
+        position: static;
+        left: 0;
+        transform: none;
     }
+
 
     h1 {
         font-size: var(--hero-fs-tablet);
         
         max-width: 20rem;
-        margin-top: 4.5rem;
-        margin-bottom: 1.5rem;
+        padding-top: 4.5rem;
+        padding-bottom: 1.5rem;
     }
 
     .hero p{
@@ -290,20 +294,23 @@ footer p {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
         gap: 1rem;
+        padding: 4rem 0;
     }
 
     .mc__title {
         font-size: var(--tittle-fs-tablet);
+        padding: 0;
     }
+
 
     h3{
         font-size: var(--heading-fs-tablet);
-
         max-width: 30rem;
     }
 
     .main-content p {
         max-width: 32rem;
+        padding-bottom: 4rem;
     }
 /* #endregion */
 
@@ -334,15 +341,6 @@ footer p {
         display: none;
     }
 
-    header {
-        width: 100%;
-        padding-top: 5rem;
-    }
-
-    main {
-        width: 100%;
-        margin: 0;
-    }
 /* #endregion */
 
 /* #region hero */
@@ -399,21 +397,13 @@ footer p {
 /* #endregion */
 
 /* #region main content */
-    .mc__photos {
-        padding: 0 10rem;
-        max-width: 90rem;
+    .mc__photos {    
+        max-width: none;
+        width: clamp(65vw, 68vw, 70vw);
     }
 
     .mc__title {
         font-size: var(--fs);
-    }
-
-    .main-content h3{
-        max-width: 25rem;
-    }
-
-    .main-content p {
-        max-width: 30rem;
     }
 
 /* #endregion */
@@ -423,16 +413,16 @@ footer p {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0;
-        padding: 4rem 8rem;
 
         background: 
             linear-gradient(
                 rgba(var(--footer-rgb), var(--footer-opacity)), 
                 rgba(var(--footer-rgb), var(--footer-opacity))
-            ), no-repeat
+            ),
             url(./images/desktop/image-footer.jpg);
+        background-size: cover;
         background-position: center;
+        width: 100vw;
     }
 
     footer h3 {

@@ -1,5 +1,3 @@
-# 🎇 WIP 🎇
-
 # Meet Landing Page 🚀
 
 ## Overview
